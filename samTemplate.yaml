@@ -29,12 +29,7 @@ Resources:
       Description: ''
       MemorySize: 128
       Timeout: 10
-      Policies:
-        - AmazonSQSFullAccess
-        - AmazonS3FullAccess
-        - AmazonSESFullAccess
-        - AmazonSageMakerFullAccess
-        - AWSLambdaBasicExecutionRole
+      Role: 'arn:aws:iam::041038083210:role/service-role/PredictionFunction-role-xrp8ykux'
       Events:
         BucketEvent1:
           Type: S3
