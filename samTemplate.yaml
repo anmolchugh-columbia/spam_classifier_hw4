@@ -8,7 +8,7 @@ Parameters:
     Description: Please Enter your Sagemaker Endpoint
   S3BucketName:
     Type: String
-    Default : 'ses-email-rn2490'
+    Default : 'ses-email-rn2490-cf'
     Description: Please Enter your S3 Bucket
   RuleSetName:
     Type: String
@@ -20,7 +20,7 @@ Parameters:
     Description: Please Enter your SES Receipt Name Rule Name
 
 Resources:
-  invokesagemaker:
+  HW4Lambda:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: lambda_function.lambda_handler
@@ -47,7 +47,7 @@ Resources:
         Variables:
           ENDPOINT_NAME: 
             Ref: EndpointName
-            
+
   Bucket1:
     Type: 'AWS::S3::Bucket'
     Properties:
