@@ -18,6 +18,7 @@ Parameters:
     Type: String
     Default : 'ses-receipt-rule'
     Description: Please Enter your SES Receipt Name Rule Name
+    
 
 Resources:
   HW4Lambda:
